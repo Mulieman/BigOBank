@@ -7,6 +7,9 @@ import java.util.List;
 
 @Entity
 @Data
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="account_type",
+        discriminatorType=DiscriminatorType.STRING)
 public  abstract class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
