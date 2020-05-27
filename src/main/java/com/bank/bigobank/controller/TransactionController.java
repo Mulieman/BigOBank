@@ -1,0 +1,28 @@
+package com.bank.bigobank.controller;
+
+import com.bank.bigobank.domain.Transaction;
+import com.bank.bigobank.service.TransactionService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController("/transaction")
+public class TransactionController
+{
+    @Autowired
+    TransactionService transactionService;
+
+    @PostMapping("/gettransactions")
+    public List<Transaction> getTransactions(@RequestParam int acc_id)
+    {
+        return transactionService.getTransactions(acc_id);
+    }
+
+
+
+
+
+}
