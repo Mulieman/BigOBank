@@ -19,6 +19,7 @@ public  abstract class Account {
     @ManyToOne()
     private User user;
     @OneToMany(mappedBy = "account")
+
     private List<Transaction> transactionList;
 
 

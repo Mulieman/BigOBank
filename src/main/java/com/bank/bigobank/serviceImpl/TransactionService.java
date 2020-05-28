@@ -1,4 +1,4 @@
-package com.bank.bigobank.service;
+package com.bank.bigobank.serviceImpl;
 
 import com.bank.bigobank.domain.Account;
 import com.bank.bigobank.domain.Transaction;
