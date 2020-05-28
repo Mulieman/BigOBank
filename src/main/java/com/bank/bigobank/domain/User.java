@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -15,7 +16,8 @@ public class User {
     private Long id;
    private String name;
    private String password;
-   private LocalDate dob;
+   @Temporal(TemporalType.DATE)
+   private Date dob;
    private String userName;
    @Embedded
    private  Address address;

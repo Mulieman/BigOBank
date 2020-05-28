@@ -1,7 +1,7 @@
 package com.bank.bigobank.controller;
 
 import com.bank.bigobank.domain.Transaction;
-import com.bank.bigobank.service.TransactionService;
+import com.bank.bigobank.serviceImpl.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
