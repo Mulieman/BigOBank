@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TransactionService {
 
-    List<Transaction> getTransactions(int acc_id);
+    List<Transaction> getTransactions(Long acc_id);
     void saveTransaction(String type, Account acc, double amount, double balance);
 
 }
