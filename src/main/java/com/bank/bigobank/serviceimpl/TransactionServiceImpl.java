@@ -19,7 +19,8 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public List<Transaction> getTransactions(int acc_id) {
-        return transactionRepository.findByAccount(acc_id);
+        //return transactionRepository.findByAccount(acc_id);
+        return null;
     }
 
     @Override
